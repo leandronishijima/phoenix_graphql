@@ -51,6 +51,6 @@ config :phoenix, :plug_init_mode, :runtime
 config :phoenix_graphql, PhoenixGraphql.Repo,
   username: "postgres",
   password: "postgres",
-  database: "phoenix_graphql_dev",
+  database: "hello_dev_graphql",
   hostname: "localhost",
   pool_size: 10
