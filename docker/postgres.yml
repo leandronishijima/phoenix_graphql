@@ -11,7 +11,7 @@ services:
       - 'POSTGRES_USER=postgres'
       - 'POSTGRES_PASSWORD=postgres'
     volumes:
-      - db-phoenix:/var/lib/postgresql/data
+      - db-phoenix-graphql:/var/lib/postgresql/data
 
 volumes:
   db-phoenix-graphql:
