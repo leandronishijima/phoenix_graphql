@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  db-phoenix-graphql:
+    container_name: db-phoenix-graphql
+    image: postgres:9.6.8-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - 'POSTGRES_DB=hello_dev_graphql'
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=postgres'
+    volumes:
+      - db-phoenix:/var/lib/postgresql/data
+
+volumes:
+  db-phoenix-graphql:
+    driver: local
