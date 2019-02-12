@@ -37,6 +37,10 @@ defmodule PhoenixGraphql.Link do
   """
   def get_user!(id), do: Repo.get!(User, id)
 
+  def get_user_by_first_name!(first_name) do
+    Repo.get_by(User, first_name: first_name)
+  end
+
   @doc """
   Creates a user.
 

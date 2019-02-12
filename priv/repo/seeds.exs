@@ -23,3 +23,11 @@ alias PhoenixGraphql.Repo
   role: "admin"
 }
 |> Repo.insert!()
+
+%User{
+  email: "admin@eurekalabs.com.br",
+  first_name: "Admin",
+  password_hash: "IOJIjAsd2",
+  role: "admin"
+}
+|> Repo.insert!()
